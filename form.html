@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Transformers fan event</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/icon" href="4b_icon.jpg">
+    </head>
+    <body>
+        <h1>Transformers fan event</h1>
+        <header>
+            <h2>Main Page</h2>
+            <img src="4b_icon.jpg" alt="decepticon logo" width="159" height="159">
+            <nav> 
+                <a href="four_B_pt2.html">Main page</a>
+            </nav>
+        </header>
+        <!--form-->
+        <form action="/register" method="POST">
+            <fieldset>
+                <label>
+                    First Name:
+                    <input type="text" placeholder="First name" required maxlength="50">
+                </label>
+                <p></p>
+                <label>
+                    Last Name:
+                    <input type="text" placeholder="Last name" required maxlength="50">
+                </label>
+                <p></p>
+                <label>
+                Name:
+                <input type="email" placeholder="youremail@email.com" required maxlength="50">
+                </label>
+                <p></p>
+                <label>
+                Name:
+                <input type="tel" placeholder="000-000-0000" required maxlength="14">
+                </label>
+                <p></p>
+            </fieldset>
+            <fieldset> 
+                <legend> reason for attendance</legend>
+                <label>
+                    <input type="checkbox" name="reason" value="business">
+                    Business
+                </label>
+                <label>
+                    <input type="checkbox" name="reason" value="artist">
+                    artist
+                </label>
+                <label>
+                    <input type="checkbox" name="reason" value="attendee">
+                    Attendee
+                </label> <label>
+                    <input type="checkbox" name="reason" value="other">
+                    other
+                </label>
+            </fieldset>
+            <fieldset> 
+                <legend> if business and or artist where do you wish your stall location</legend>
+                <label>
+                    <input type="radio" name="location" value="artist alley">
+                    Artist alley
+                </label>
+                <label>
+                    <input type="radio" name="location" value="hall A">
+                    Hall A
+                </label>
+                <label>
+                    <input type="radio" name="contact" value="Hall B">
+                    Hall B
+                </label> <label>
+                    <input type="radio" name="contact" value="other">
+                    Other
+                </label>
+            </fieldset>
+             <label for="country">
+                Country:
+            </label>
+            
+            <select id="country" name="country">
+                <option value="">Choose a country</option>
+                <option value="us">United States</option>
+                <option value="ca">Canada</option>
+                <option value="uk">United kingdom</option>
+                <option value="ie">Ireland</option>
+                <option value="mx">Mexico</option>
+            </select>
+            <button type="submit" formaction="/register"> register
+            </button>
+            <button type="reset" formaction="/reset"> clear form
+            </button>
+        </form>
+
+
+    </body>
+</html>
